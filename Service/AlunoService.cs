@@ -1,3 +1,6 @@
+using Universidade.Interface;
+namespace Universidade.Service
+{
     public class AlunoService : IAlunoService
     {
         private readonly IAlunoRepository _alunoRepository;
@@ -32,3 +35,4 @@
             throw new NotImplementedException();
         }
     }
+}

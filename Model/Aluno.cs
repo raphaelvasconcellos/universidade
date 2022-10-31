@@ -1,3 +1,7 @@
+namespace Universidade.Model
+{
+    
+}
 public class Aluno
 {
     public int Id { get; set; }

@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Universidade.Interface;
+using Universidade.Service;
+
 
 public class Program
 {
@@ -6,10 +9,8 @@ public class Program
     {
         var serviceCollection = new ServiceCollection();
 
-        serviceCollection.AddSingleton<IAlunoRepository, AlunoRepository>();
+        serviceCollection.AddSingleton<IAlunoRepositry, AlunoRepository>();
         serviceCollection.AddSingleton<IAlunoService, AlunoService>();
-        
-
 
         var serviceProvider = serviceCollection.BuildServiceProvider(); //Cria um container de serviceProvider
 

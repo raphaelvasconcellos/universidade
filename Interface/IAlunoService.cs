@@ -1,4 +1,8 @@
-public interface IAlunoService
+namespace Universidade.Interface
 {
- void CadastrarAluno(Aluno aluno);
+
+    public interface IAlunoService
+    {
+        void CadastrarAluno(Aluno aluno);
+    }
 }
